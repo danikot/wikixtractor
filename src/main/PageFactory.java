@@ -1,5 +1,4 @@
 package main;
-//OLVIAN, scroll runter zur 60-61.
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -54,7 +53,7 @@ public class PageFactory {
 		     { 
 		 
 		          //head of an article
-			      if(Zeile.indexOf("¤	") != -1)
+			      if(Zeile.indexOf("Â¤	") != -1)
 			        {   //System.out.print("ANFANG \n");
 
 			    	    int IndexInZeile = 2;
@@ -80,7 +79,7 @@ public class PageFactory {
 			             
 			            }
 			      //end of an article
-			      else if(Zeile.indexOf('¤') > -1){ 
+			      else if(Zeile.indexOf('Â¤') > -1){ 
 			    	  Wikitext=Wikitext.replace("\\", "\\\\");
 			    	  Wikitext=Wikitext.replace("'", "\\'");
 			    	  articlesREAD++;
